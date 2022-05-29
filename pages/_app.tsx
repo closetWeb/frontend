@@ -1,27 +1,9 @@
 import type { AppProps } from 'next/app'
-import { createGlobalStyle } from 'styled-components';
-
-const GlobalStyles = createGlobalStyle`
-html,
-body {
-    padding: 0;
-    margin: 0;
-}
-
-a {
-    color: inherit;
-    text-decoration: none;
-}
-
-* {
-    box-sizing: border-box;
-}
-`;
-
+import { GlobalStyle } from '../styles/global-style'
 function MyApp({ Component, pageProps }: AppProps) {
   return (
   <>
-    <GlobalStyles/>
+    <GlobalStyle/>
     <Component {...pageProps} />
   </>
   )

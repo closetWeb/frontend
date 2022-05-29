@@ -11,16 +11,18 @@ export const GlobalStyle = createGlobalStyle`
     ::-webkit-scrollbar {
         display: none;
     }
-    html{
+    html {
         font-size: 11px;
         -webkit-text-size-adjust: none;
-        font-family: -apple-system,BlinkMacSystemFont,helvetica,Apple SD Gothic Neo,sans-serif;       
         font-display: fallback;
         ${device.tablet}{
             font-size: 10px;
         }
         -ms-overflow-style: none;
         scrollbar-width: none;
+    }
+    body {
+      font-family: Noto sans-serif, Noto Sans KR;
     }
     button {
         background: none;
@@ -31,6 +33,9 @@ export const GlobalStyle = createGlobalStyle`
             cursor: default;
             fill: #f2f3f4;
         }
+    }
+    input {
+        border: none;
     }
 
     .pc-tablet-only {
@@ -51,4 +56,6 @@ export const GlobalStyle = createGlobalStyle`
             display: block;
         }
     }
+
+    
 `;
