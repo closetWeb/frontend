@@ -1,11 +1,11 @@
 import { ReactNode } from 'react'
 import styled from 'styled-components'
 
-export interface DefaultContainerProps {
+export interface AuthContainerProps {
   children?: ReactNode
 }
 
-const DefaultContainer = ( props : DefaultContainerProps ) => {
+const AuthContainer = ( props : AuthContainerProps ) => {
   return (
     // styled-container ex(Flex, margin, wrap?)
     <MainContainer>
@@ -15,10 +15,11 @@ const DefaultContainer = ( props : DefaultContainerProps ) => {
 }
 
 const MainContainer = styled.div`
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  margin-left: 24px;
-  margin-right: 24px;
+  margin: 124px 24px 0 24px;
 `
 
-export default DefaultContainer
+
+export default AuthContainer

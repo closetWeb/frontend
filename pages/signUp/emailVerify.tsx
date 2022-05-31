@@ -1,6 +1,6 @@
 import type { NextPage } from 'next'
 
-import EmailVerifyTemplete from '../../components/templetes/SignUp'
+import EmailVerifyTemplete from '../../components/templetes/SignUp/EmailVerifyTemplete'
 
 const EmailVerifyPage: NextPage = () => {
   return (
