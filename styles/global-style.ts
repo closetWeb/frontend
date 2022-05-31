@@ -24,6 +24,9 @@ export const GlobalStyle = createGlobalStyle`
     body {
       font-family: Noto sans-serif, Noto Sans KR;
     }
+    a {
+      text-decoration: none;
+    }
     button {
         background: none;
         padding: 0;
